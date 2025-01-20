@@ -1,0 +1,22 @@
+1 .the memory layout of structure is often influenced by the alignment rules of the system
+
+
+2. Padding  : to ensure the proper alignment of each member ,  complier oftern insert unused memory between structure memory.
+            this unused memory is known as pddiing
+            .padding help to ensure that each member of the structure is aligned acconding to the system rules
+
+
+#include <stdio.h>
+
+struct MyStruct {
+    char a;     // 1 byte
+    int b;      // 4 bytes
+    char c;     // 1 byte
+};
+
+int main() {
+    printf("Size of MyStruct: %zu bytes\n", sizeof(struct MyStruct));
+    return 0;
+}
+
+in the above code there is the padding between a and b because b required 4 bytes of space to start at a memory address which is multiple of 4

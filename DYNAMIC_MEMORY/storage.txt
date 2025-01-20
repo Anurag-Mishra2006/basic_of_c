@@ -1,0 +1,38 @@
+in c language following classes are most frequently used
+    1. automatic variable
+    2. external variable
+    3. static variable
+    4. register variable
+
+1. automatic variable : auto storage class
+            scope : local to function body they are defined  in
+            default value : garbage value(a random value)
+            lifetime : till the end of the function block they are defined in
+        
+        a variable defined without any storage class specification is by default an automatic variable
+    
+
+2. external variable : external storage class 
+            they are same as global variable
+            scope : global to the program they are defined in
+            default value : 0
+            lifetime : these variable are declare outside any function. They are available throughout the lifetime of the program 
+
+            it is recommended to minimize the use of unnecessary global variables in a program 
+
+3. static variable : static storage 
+            scope : local to the block they are defined in 
+            default intial value  : 0 
+            lifetime : they are available throughout the lifetime of the program
+
+        the space allocation of the static variable also happen in another segement of the storage class
+
+4. register variable : register storage classs 
+            scope : local to the function they are declared in
+            default intial value : garbage value 
+            lifetime : they are available till the end of the function block in the the variable is defined
+
+
+        register variable requests the compiler to store the variable in the CPU register instead of storing in the memory to have faster acess
+
+        generally this is done for the variable which are being used frequently        

@@ -1,0 +1,1 @@
+unlike struct all members of a union share the same memory location. The size of union is determined by the size of its largest member
